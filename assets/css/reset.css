@@ -1,26 +1,26 @@
+/* reset the box-sizing, margin, and padding for entire document */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  /* set the height of the document */
   html {
     height: 100%;
   }
   
-  body {
-    line-height: 1.5;
-    font-family: Verdana,  Tahoma, sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+/* override the behavior of links to NOT be underlined */
+a {
+  text-decoration: none;
+}
 
+/* override the behavior of links when you visit them, to NOT highlight them */
   a:visited {
     color: blue;
   }
 
+  /* override the behavior of unorder list items to not have a bullet */
   ul {
     list-style: none;
   }

@@ -10,11 +10,10 @@
     </head>
 
     <body>
-        <!-- contains name, picture, and nav links -->
+        <!-- contains name, picture, quote of the day, and nav links -->
         <header class="header">
             <!-- this contains the name and picture -->
             <section class="header-profile-container">
-                <!-- <img src="https://picsum.photos/50/100" alt="This is a picture of the developer."> -->
                 <img src="./assets/images/profile-pic.png" alt="This is a picture of the developer.">
                 <h1>Michael Nabatov</h1>
             </section>
@@ -29,7 +28,7 @@
                 </ul>                
             </nav>
 
-            <!-- this contains a slogan -->
+            <!-- this contains the quote of the day -->
             <aside class="header-aside-container">
                 <marquee>Don&apos;t imitate, understand!</marquee>
             </aside>
@@ -37,6 +36,7 @@
         
         <!-- contains the main content of the landing page -->
         <main class="main">
+            <!-- contains the About Me heading and content -->
             <section class="about" id="about">
                 <h2>About Me</h2>
                 <p>
@@ -44,10 +44,12 @@
                 </p>
             </section> 
 
-            <!-- contains portfolio info -->
+            <!-- contains Portfolio heading and projects content -->
             <section class="portfolio" id="portfolio">
                 <h2>Portfolio</h2>
+                <!-- contains multiple Project sections laid out in a card like fashion -->
                 <section class="projects-container">
+                    <!-- contains the description of the project and technologies used -->
                     <section class="project">
                         <ul>
                             <li><h3>Code Refactor</h3></li>
@@ -66,7 +68,6 @@
                             <img src="https://picsum.photos/200/200" alt="This is a picture of the CSS Snippets website.">
                         </a>
                     </section>
-                
                     <section class="project">
                         <ul>
                             <li><h3>Study Guide</h3></li>
@@ -78,8 +79,7 @@
                     </section>
                     <section class="project">
                         <ul>
-                            <li><h3>Crypto Watch </h3>
-                            <li><h4>(coming soon)</h4></li>
+                            <li><h3>Crypto Watch (TBD) </h3>
                             <li>HTML/CSS/Javascript<li>
                         </ul>
                         <a class="project-website-link"><img src="https://picsum.photos/300/200" alt="This is a picture of the Crypto Watch website.">
@@ -98,14 +98,16 @@
             </section>
         </main>
 
-        <!-- contains the contact section -->
+        <!-- contains Contact Me heading, an input form, and navigation links to other sites -->
         <footer class="contact" id="contact">
             <h2>Contact Me</h2>
+            <!-- contains a form with multiple text inputs -->
             <form class="contact-form">
                 <input type="text" placeholder="Enter your name">
                 <input type="email" placeholder="Enter your email">
                 <input type="submit" value="Send">
             </form>
+            <!-- contains links to external sites -->
             <nav class="contact-nav-container">
                 <ul>
                     <li><a href="https://github.com/mikeyboxx" target="_blank">GitHub</a></li>

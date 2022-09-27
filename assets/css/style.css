@@ -1,3 +1,4 @@
+/* These are variables for headings in the main section */
 :root {
     --main-headings-left-margin: 80px;
     --main-headings-width: 150px;
@@ -6,11 +7,15 @@
     --main-headings-border-right: 3px solid var(--main-headings-font-color);
 }
 
+/* reset the font family, font size, and spacing between lines, for entire document. Also set background and text color */
 body {
+    line-height: 1.5;
+    font-family: Verdana,  Tahoma, sans-serif;
     padding-bottom: 20px;
     margin-right: 60px;
 }
 
+/* make the header a flex container, with children laid out in a row. Set the background to cover the entire section */
 .header {
     margin-top: 20px;
     margin-left: 60px;
@@ -20,11 +25,13 @@ body {
     background-size: cover;
 } 
 
+/* make the Profile a flex container, with children laid out in a row. */
 .header-profile-container {
     display: flex;
     flex-flow: row wrap;
 }
 
+/* style the image of the developer */
 .header-profile-container img{
     margin-top: 10px;
     height: 180px;
@@ -37,6 +44,7 @@ body {
     font-weight: 400;
 }
 
+/* style the navigation links of the Header section */
 .header-nav-container {
     margin-top: 10px;
     flex: 1 1;
@@ -51,6 +59,7 @@ body {
     margin: 0 5px;
 }
 
+/* sstyle the Quote of the day */
 .header-aside-container {
     padding-top: 10px;
     flex: 100%;
@@ -60,17 +69,20 @@ body {
     color: red;
 }
 
+/* make the Main section a flex container, with children laid out in a column */
 .main {
     display: flex;
     flex-flow: column nowrap;
 }
 
+/* make the About Me, Portfolio, and Contact Me sections a flex container, with children laid out in a row. */
 .about, .portfolio, .contact   {
     margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
 }
 
+/* style the headings in About Me, Portfolio, and Contact Me sections  */
 .about h2, .portfolio h2, .contact h2 {
     width: var(--main-headings-width);
     margin-left: var(--main-headings-left-margin);
@@ -80,12 +92,13 @@ body {
     text-align: right;
 }
 
+/* style the content in the About Me section */
 .about p {
     flex: 1 1;
     padding: 0 20px 20px 20px;
 }
 
-
+/* make the Projects section a flex container, with children laid out in a row */
 .projects-container {
     flex: 1 1;
     margin-left: 20px;
@@ -93,6 +106,7 @@ body {
     flex-flow: row wrap;
 }
 
+/* make the children of the Projects section a flex container, with children laid out in a row */
 .project {
     display: flex;
     flex-flow: row wrap;
@@ -100,6 +114,7 @@ body {
     padding: 5px 10px;
 }
 
+/* style the description of the project to make it overlap the image */
 .project ul {
     align-self: end;
     margin: 0 0 20px 20px;
@@ -112,14 +127,17 @@ body {
     font-size: .9em;
 }
 
+/* make the technologies used smaller, in the Project description */
 .project ul li:nth-child(2) {
     font-size: .8em;
 }
 
+/* make the links full width */
 .project a {
     width: 100%;
 }
 
+/* style the images */
 .project img {
     border-radius: 15px;
     box-shadow: 5px 5px gray;
@@ -127,18 +145,22 @@ body {
     width: 100%;
 }
 
+/* make it look like a link, when you hover over an image */
 .project img:hover {
     opacity: .7;
 }
 
+/* make the first Project larger */
 .project:first-child {
     flex: 100%; 
 }
 
+/* make the image of the first Project larger */
 .project:first-child img{
     height: 300px;
 }
 
+/* make the Contact form  a flex container, with children laid out in a row */
 .contact-form {
     flex: 2 1;
     margin-left: 20px;
@@ -147,7 +169,7 @@ body {
     align-items: flex-end;
 }
 
-
+/* style the inputs in the Contact form */
 .contact-form input{
     font-size: 1em;
     margin: 0 10px 10px 10px;
@@ -155,6 +177,7 @@ body {
     border-bottom: 1px solid var(--main-headings-font-color);
 }
 
+/* style the Send button in the Contact form */
 .contact-form input[type="submit"]{
     font-size: .8em;
     border: 1px solid var(--main-headings-font-color);
@@ -163,11 +186,13 @@ body {
     padding: 3px;
 }
 
+/* make the text in the placeholder very faint, in the input text boxes of the Contact form */
 .contact-form input::placeholder {
     opacity: .5;
     color: grey;
 }
 
+/* style the navigation links at the bottom of the page */
 .contact-nav-container {
     flex: 1 1;
     display: flex;
@@ -187,6 +212,7 @@ body {
     margin: 0 15px;
 }
 
+/* change the appearance of the page to fit tablet size devices */
 @media screen and (max-width: 768px) {
     body {
         font-size: .89em;
@@ -197,6 +223,7 @@ body {
     }
 }
 
+/* change the appearance of the page to fit mobile size devices */
 @media screen and (max-width: 390px) {
     body {
         font-size: .75em;
@@ -224,6 +251,3 @@ body {
         flex: 100%; 
     }
 }
-
-
-
