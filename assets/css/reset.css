@@ -17,6 +17,10 @@
     text-decoration: none;
   }
 
+  a:visited {
+    color: blue;
+  }
+
   ul {
     list-style: none;
   }
