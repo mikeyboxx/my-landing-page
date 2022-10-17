@@ -149,6 +149,7 @@ body {
     box-shadow: 5px 5px gray;
     height: 200px;
     width: 100%;
+    object-fit: cover;
 }
 
 /* make it look like a link, when you hover over an image */
